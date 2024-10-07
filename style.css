@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+.container {
+  background-color: white;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-right: 8px solid pink;
+  border-bottom: 6px solid pink;
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px 1rem;
+  border-radius: 4px;
+  overflow: auto;
+}
+.password-container > #copy-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#slider {
+  width: 80%;
+  cursor: pointer;
+  height: 20px;
+}
+.input-box-container {
+  margin: 1rem 0;
+}
+.input {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.input > input {
+  cursor: pointer;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+#generate-password {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 50%;
+  }
+  #password {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  #password {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  #password {
+    font-size: 1rem;
+  }
+}
